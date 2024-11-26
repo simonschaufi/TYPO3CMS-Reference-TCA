@@ -17,18 +17,18 @@
 
     ..  confval:: type
         :name: columns-config-type
+        :Type: string, one of the :ref:`column types <columns-types>`
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['type']
         :Required: true
-        :type: string, one of the :ref:`column types <columns-types>`
 
         The `type` influences the rendering of the form field in the backend.
         It also influences the processing of data on saving the values.
 
     ..  confval:: rendertype
         :name: columns-config-rendertype
+        :Type: string
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['rendertype']
         :Required: true
-        :type: string
 
         For some :confval:`columns-config-type` definitions there are additional
         render types available that mainly influence rendering. For example

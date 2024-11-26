@@ -88,6 +88,17 @@
         button to open an element browser. It is enabled by default if rendering a
         group element.
 
+        ..  confval:: rendertype
+            :name: group-fieldControl-elementBrowser-rendertype
+            :Type: string
+            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['rendertype']
+            :Required: true
+            :Default: elementBrowser
+
+            Use a render type from core or your own. Custom render types can be
+            registered with the `NodeFactory <https://docs.typo3.org/permalink/t3coreapi:FormEngine-Rendering-NodeFactory>`_.
+
+
     ..  confval:: insertClipboard
         :name: group-fieldControl-insertClipboard
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
